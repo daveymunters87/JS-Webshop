@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
     let cartItems = JSON.parse(localStorage.getItem('cart')) || [];
 
     displayCartItems(cartItems);
@@ -15,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = 'checkout.html';
         }
     });
-});
 
 function displayCartItems(cartItems) {
     const cartItemsContainer = document.getElementById('cart-items');

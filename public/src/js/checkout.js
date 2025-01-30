@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
     const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
     const cartItemsContainer = document.getElementById('cart-items');
     const subtotalElement = document.getElementById('subtotal');
@@ -40,12 +39,12 @@ document.addEventListener('DOMContentLoaded', () => {
     totalPriceElement.innerText = `€${total.toFixed(2)}`;
 
     placeOrderButton.addEventListener('click', () => {
-        const firstname = document.getElementById('firstname').value;
-        const lastname = document.getElementById('lastname').value;
+        const firstName = document.getElementById('firstname').value;
+        const lastName = document.getElementById('lastname').value;
         const email = document.getElementById('email').value;
         const phone = document.getElementById('phone').value;
 
-        if (!firstname || !lastname || !email || !phone) {
+        if (!firstName || !lastName || !email || !phone) {
             alert('Please fill in all required fields.');
             return;
         }
@@ -56,13 +55,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const phoneRegex = /^[0-9\s-]+$/;   
 
         // Validate first name
-        if (!nameRegex.test(firstname)) {
+        if (!nameRegex.test(firstName)) {
             alert('First name should only contain letters');
             return;
         }
 
         // Validate last name
-        if (!nameRegex.test(lastname)) {
+        if (!nameRegex.test(lastName)) {
             alert('Last name should only contain letters');
             return;
         }
@@ -84,8 +83,8 @@ document.addEventListener('DOMContentLoaded', () => {
             total: subtotal + shippingCost,
             date: new Date().toISOString(),
             email: email,
-            firstName: firstname,
-            lastName: lastname,
+            firstName: firstName,
+            lastName: lastName,
             phone: phone
         };
 
@@ -97,4 +96,3 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.removeItem('cart');
         window.location.href = 'index.html';
     });
-}); 

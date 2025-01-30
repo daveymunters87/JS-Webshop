@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
     let products = JSON.parse(localStorage.getItem('products'));
 
     if (!products) {
@@ -13,8 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         displayProducts(products);
     }
-    updateCartNotification(); 
-});
+updateCartNotification(); 
 
 function updateCartNotification() {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -56,6 +54,16 @@ function addToCart(productId) {
 
 function displayProducts(products) {
     const productList = document.getElementById('product-list');
+    productList.innerHTML = '';
+
+    if (products.length === 0) {
+        const noProductsMessage = document.createElement('div');
+        noProductsMessage.className = 'text-center text-gray-400 mt-4';
+        noProductsMessage.innerText = 'No products are available.';
+        productList.appendChild(noProductsMessage);
+        return;
+    }
+
     products.forEach(product => {
         const productCard = document.createElement('div');
         productCard.className = 'bg-gray-800 p-4 rounded-lg shadow-lg flex flex-col items-center';

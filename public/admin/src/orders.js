@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
     const ordersList = document.getElementById('orders-list');
     const orders = JSON.parse(localStorage.getItem('orders')) || [];
 
@@ -21,4 +20,3 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         ordersList.appendChild(orderElement);
     });
-});
