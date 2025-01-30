@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let products = JSON.parse(localStorage.getItem('products'));
 
     if (!products) {
-        fetch('../products.json')
+        fetch('../../products.json')
             .then(response => response.json())
             .then(data => {
                 products = data;

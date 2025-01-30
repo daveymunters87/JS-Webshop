@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const email = document.getElementById('email').value;
         const phone = document.getElementById('phone').value;
 
-        // Check if fields are empty
         if (!firstname || !lastname || !email || !phone) {
             alert('Please fill in all required fields.');
             return;

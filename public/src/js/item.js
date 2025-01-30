@@ -7,7 +7,7 @@ if (products) {
     const product = products.find(p => p.id == productId);
     displayProduct(product);
 } else {
-    fetch('../../../products.json')
+    fetch('../../products.json')
         .then(response => response.json())
         .then(products => {
             const product = products.find(p => p.id == productId);
@@ -51,7 +51,6 @@ function displayProduct(product) {
     }
 }
 
-// Function to update the cart notification
 function updateCartNotification() {
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
     const cartNotification = document.getElementById('cart-notification');
@@ -66,5 +65,4 @@ function updateCartNotification() {
     }
 }
 
-// Call the function to update the notification on page load
 updateCartNotification();
