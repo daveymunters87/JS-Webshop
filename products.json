@@ -1,0 +1,80 @@
+[
+    {
+        "id": 1,
+        "name": "Alienware Aurora R12",
+        "price": 1599.99,
+        "image": "https://app-account-dubbelgaaf-bo642fz7.sk-cdn.net/g/dubbelgaaf-img-scale/40253/3fa2ad6470816d9aa2d47d0ee9b15bbf/aa4d782d-2d1e-4a2f-8247-abfe8c626dd6.sk_full/f/Alienware_R12_Left.jpg",
+        "description": "The Alienware Aurora R12 is a high-performance gaming PC with a sleek design, powered by the latest Intel processors and NVIDIA GeForce RTX 3080 graphics card.",
+        "specs": {
+            "processor": "AMD Ryzen 5 5500",
+            "memory": "16 GB",
+            "storage": "1 TB",
+            "graphics": "GeForce RTX 4060"
+        }
+    },
+    {
+        "id": 2,
+        "name": "MSI Trident 3",
+        "price": 1199.99,
+        "image": "https://pcmegastore.nl/wp-content/uploads/2019/06/251673_1543462756_detail.jpg",
+        "description": "The MSI Trident 3 is a compact yet powerful gaming PC, perfect for small spaces. It comes with an Intel Core i5 processor and NVIDIA GeForce GTX 1660 Super.",
+        "specs": {
+            "processor": "Intel Core i5",
+            "memory": "8 GB",
+            "storage": "512 GB SSD",
+            "graphics": "NVIDIA GeForce GTX 1660 Super"
+        }
+    },
+    {
+        "id": 3,
+        "name": "HP Omen 30L",
+        "price": 1799.99,
+        "image": "https://screenon.nl/cdn/shop/files/screenon-game-computer-gaming-pc-ryzen-5-500gb-m-2-ssd-16gb-ram-radeon-rx-550-game-pc-tx87428-windows-11-screenon-1_600x.jpg?v=1689289290",
+        "description": "The HP Omen 30L is a powerhouse with a customizable design, featuring an AMD Ryzen 9 processor and NVIDIA GeForce RTX 3070, ideal for high-end gaming.",
+        "specs": {
+            "processor": "AMD Ryzen 9 5900X",
+            "memory": "32 GB",
+            "storage": "1 TB SSD",
+            "graphics": "NVIDIA GeForce RTX 3070"
+        }
+    },
+    {
+        "id": 4,
+        "name": "Corsair One i160",
+        "price": 2099.99,
+        "image": "https://screenon.nl/cdn/shop/files/white_mesh_01_600x.jpg?v=1701866026",
+        "description": "The Corsair One i160 is a top-tier gaming PC, equipped with an Intel Core i9 processor and NVIDIA GeForce RTX 3090, delivering unbeatable performance.",
+        "specs": {
+            "processor": "Intel Core i9",
+            "memory": "32 GB",
+            "storage": "2 TB SSD",
+            "graphics": "NVIDIA GeForce RTX 3090"
+        }
+    },
+    {
+        "id": 5,
+        "name": "CyberPowerPC Gamer Xtreme VR",
+        "price": 1299.99,
+        "image": "https://screenon.nl/cdn/shop/files/screenon-intel-core-i7-480gb-m-2-ssd-1tb-hdd-rtx-3060-gamepc-x54196-wifi-screenon-1_600x600_crop_center.jpg?v=1689282926",
+        "description": "The CyberPowerPC Gamer Xtreme VR is a budget-friendly gaming PC that doesn't compromise on performance, featuring an Intel Core i7 and NVIDIA GeForce RTX 3060.",
+        "specs": {
+            "processor": "Intel Core i7",
+            "memory": "16 GB",
+            "storage": "1 TB HDD",
+            "graphics": "NVIDIA GeForce RTX 3060"
+        }
+    },
+    {
+        "id": 6,
+        "name": "NZXT Streaming Plus PC",
+        "price": 1499.99,
+        "image": "https://www.computer-bestel.nl/images/componenten/InterTech-3306-CAVY.png",
+        "description": "The NZXT Streaming Plus PC is optimized for gaming and streaming, featuring an AMD Ryzen 7 processor and NVIDIA GeForce RTX 2070 Super.",
+        "specs": {
+            "processor": "AMD Ryzen 7 3700X",
+            "memory": "16 GB",
+            "storage": "1 TB SSD",
+            "graphics": "NVIDIA GeForce RTX 2070 Super"
+        }
+    }
+]

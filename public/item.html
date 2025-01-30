@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="output.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/decc07a60c.js" crossorigin="anonymous"></script>
+    <title>Techtopia - Product Details</title>
+</head>
+
+<body class="bg-gray-900 text-white font-sans">
+    <nav class="sticky top-0 w-full bg-gray-900/75 backdrop-blur-sm" shadow-sm z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#home" class="text-2xl font-bold text-gray-800" aria-label="Logo">
+                    <img src="images/Logo.png" alt="" class="w-32">
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="cart.html"
+                        class="text-gray-300 hover:text-teal-400 transition-colors duration-300 flex items-center gap-2 ">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Cart
+                        <span id="cart-notification" class="hidden w-2.5 h-2.5 bg-red-500 rounded-full absolute"></span>
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-toggle" class="md:hidden focus:outline-none" name="menu-toggle">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden flex-col space-y-4 mt-4 bg-gray-800 p-4 rounded-lg">
+                <a href="cart.html"
+                    class="text-gray-300 hover:text-teal-400 transition-colors duration-300 flex items-center gap-2">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Cart
+                    <span id="cart-notification-mobile"
+                        class="hidden w-2.5 h-2.5 bg-red-500 rounded-full absolute"></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="container mx-auto p-6">
+        <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+            <nav class="p-4">
+                <ol class="list-reset flex text-gray-400">
+                    <li><a href="index.html" class="hover:text-teal-400">Home</a></li>
+                    <li><span class="mx-2">/</span></li>
+                    <li id="breadcrumb-item">Product Name</li>
+                </ol>
+            </nav>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 p-8">
+                <div class="flex justify-center items-center">
+                    <div class="w-full max-w-xs">
+                        <img id="main-image" src="" alt="Product Image" class="w-full h-auto object-contain rounded-lg">
+                    </div>
+                </div>
+
+                <div id="item-details">
+                    <h1 id="item-title" class="text-4xl font-bold text-teal-400 mb-4">Loading...</h1>
+                    <div class="flex items-center mb-4">
+                        <div class="flex items-center">
+                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9.049 2.927C9.378 2.064 10.622 2.064 10.951 2.927l1.286 3.957a1 1 0 00.95.69h4.074c.971 0 1.372 1.24.588 1.81l-3.301 2.4a1 1 0 00-.364 1.118l1.286 3.957c.329.864-.755 1.568-1.539 1.118l-3.301-2.4a1 1 0 00-1.175 0l-3.301 2.4c-.784.45-1.868-.254-1.539-1.118l1.286-3.957a1 1 0 00-.364-1.118l-3.301-2.4c-.784-.57-.383-1.81.588-1.81h4.074a1 1 0 00.95-.69l1.286-3.957z" />
+                            </svg>
+                        </div>
+                        <p class="text-sm text-gray-400 ml-2">(15 reviews)</p>
+                    </div>
+
+                    <p id="item-price" class="text-2xl text-white font-semibold mb-6">€0.00 <span
+                            class="text-lg text-gray-400 line-through ml-2">€0.00</span></p>
+                    <p id="item-description" class="text-lg text-gray-300 leading-relaxed mb-6">Description loading...
+                    </p>
+
+                    <div class="mb-6">
+                        <button id="add-to-cart"
+                            class="w-full py-3 bg-teal-500 hover:bg-teal-400 text-white font-bold rounded-lg shadow-lg focus:outline-none focus:ring-2 focus:ring-teal-400 mb-4">Add
+                            to Cart</button>
+                    </div>
+
+                    <h2 class="text-2xl font-bold text-teal-400">Specs</h2>
+                    <p class="text-sm text-gray-400">Processor: <span id="item-processor"
+                            class="text-white">Loading...</span></p>
+                    <p class="text-sm text-gray-400">Memory: <span id="item-memory" class="text-white">Loading...</span>
+                    </p>
+                    <p class="text-sm text-gray-400">Storage: <span id="item-storage"
+                            class="text-white">Loading...</span></p>
+                    <p class="text-sm text-gray-400">Graphics Card: <span id="item-graphics"
+                            class="text-white">Loading...</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../src/js/item.js"></script>
+    <script src="../src/js/index.js"></script>
+</body>
+
+</html>

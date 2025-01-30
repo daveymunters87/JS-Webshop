@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+p {
+    font-size: 1.125rem;
+}
+
+#cart-notification {
+    position: relative;
+    top: -10px; 
+}
+
+
