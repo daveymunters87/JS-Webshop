@@ -26,7 +26,7 @@ function renderProductList() {
                 <p class="text-gray-300">${product.description}</p>
             </div>
             <div class="flex space-x-2 ml-5">
-                <a href="public/edit.html?id=${product.id}" class="edit-button flex-1 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded text-center">Edit</a>
+                <a href="../admin/edit.html?id=${product.id}" class="edit-button flex-1 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded text-center">Edit</a>
                 <button class="delete-button flex-1 bg-red-500 hover:bg-red-400 text-white font-bold py-2 px-4 rounded text-center" data-index="${index}">Delete</button>
             </div>
         `;

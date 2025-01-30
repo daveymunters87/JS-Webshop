@@ -4,19 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../../public/output.css" rel="stylesheet"> <!-- Link to Tailwind CSS -->
-    <title>Techtopia Admin Panel - Edit Product</title>
+    <link href="../../public/output.css" rel="stylesheet"> 
+    <title>Techtopia Admin Panel - Add Product</title>
 </head>
 
 <body class="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center">
 
     <div class="w-full max-w-4xl bg-gray-800 p-6 rounded-lg shadow-lg">
-        <h1 class="text-3xl font-bold text-teal-400 mb-6 text-center ">Edit Product</h1>
+        <h1 class="text-3xl font-bold text-teal-400 mb-6 text-center">Add New Product</h1>
 
-        <!-- Form for Editing Products -->
         <form id="product-form">
-            <input type="hidden" id="product-id">
-
             <div class="mb-4">
                 <label for="name" class="block text-sm font-medium text-teal-200 mb-2">Product Name</label>
                 <input type="text" id="name" name="name"
@@ -25,8 +22,8 @@
 
             <div class="mb-4">
                 <label for="price" class="block text-sm font-medium text-teal-200 mb-2">Price</label>
-                <input type="text" id="price" name="price"
-                    class="block w-full bg-gray-700 border border-gray-600 rounded-md py-2 px-3 text-white" required>
+                <input type="text" id="price" name="price" step="0.01" min="0"
+                    class="block w-full bg-gray-700 border border-gray-600 rounded-md py-2 px-3 text-white">
             </div>
 
             <div class="mb-4">
@@ -67,15 +64,13 @@
             </div>
 
             <button type="submit"
-                class="w-full py-3 bg-teal-500 hover:bg-teal-400 text-white font-bold rounded-lg shadow-lg mb-5">Update
+                class="w-40 py-3 bg-teal-500 hover:bg-teal-400 text-white font-bold rounded-lg shadow-lg">Add
                 Product</button>
-            <a href="../index.html"
-                class="block w-full text-center py-3 bg-red-500 hover:bg-red-400 text-white font-bold rounded-lg shadow-lg">Go
-                Back</a>
+            <a href="../admin/index.html" class="block text-center mt-4 text-white hover:text-teal-300">Back to Products</a>
         </form>
     </div>
 
-    <script src="../src/edit.js"></script> <!-- Link to Edit JS -->
+    <script src="src/add.js"></script>
 </body>
 
 </html>

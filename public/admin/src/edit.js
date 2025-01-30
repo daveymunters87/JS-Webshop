@@ -57,6 +57,6 @@ productForm.addEventListener('submit', function (e) {
 
     localStorage.setItem('products', JSON.stringify(products));  // Save to localStorage
     alert('Product updated successfully!');
-    window.location.href = '../index.html';
+    window.location.href = '../admin/index.html';
 });
 z

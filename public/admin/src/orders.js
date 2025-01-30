@@ -21,4 +21,4 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         ordersList.appendChild(orderElement);
     });
-}); 
+});
