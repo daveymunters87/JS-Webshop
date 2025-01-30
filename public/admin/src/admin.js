@@ -4,7 +4,7 @@ let originalProducts = [];
 const productList = document.getElementById('product-list');
 const resetButton = document.getElementById('reset-button');
 
-fetch('../../products.json')
+fetch('../products.json')
     .then(response => response.json())
     .then(data => {
         originalProducts = [...data];  

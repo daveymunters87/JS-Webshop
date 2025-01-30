@@ -7,7 +7,7 @@ if (products) {
     const product = products.find(p => p.id == productId);
     displayProduct(product);
 } else {
-    fetch('../../products.json')
+    fetch('products.json')
         .then(response => response.json())
         .then(products => {
             const product = products.find(p => p.id == productId);
