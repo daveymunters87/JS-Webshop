@@ -10,7 +10,6 @@
             window.location.href = 'cart.html';
             return;
         } else {
-            alert('Proceeding to checkout...');
             window.location.href = 'checkout.html';
         }
     });
